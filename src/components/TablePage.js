@@ -74,7 +74,7 @@ const TablePage = ({ formDataList }) => {
             type="primary"
             style={{
               background: 'none',
-              border: '1px solid black', // Added border style for visibility
+              border: '1px solid black',
               borderRadius: 2,
               boxShadow: 'none',
               color: 'black',              
@@ -108,7 +108,7 @@ const TablePage = ({ formDataList }) => {
             type="primary"
             style={{
               background: 'none',
-              border: '1px solid black', // Added border style for visibility
+              border: '1px solid black',
               borderRadius: 2,
               boxShadow: 'none',
               color: 'black',              
