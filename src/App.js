@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import FormPage from './components/FormPage';
 import TablePage from './components/TablePage';
 import './App.css';
+import logo from './components/logo.jpeg'
 
 const App = () => {
   const [formModalVisible, setFormModalVisible] = useState(false);
@@ -28,18 +29,20 @@ const App = () => {
           color: 'white',
         }}
       >
-        <div style={{ fontWeight: 'bold', fontSize: '18px' }}>EazyTaxes</div>
+        <div style={{ display: 'flex', alignItems: 'center', fontSize: '18px' }}>
+          <img src={logo} alt="Logo" style={{ width: '40px', marginRight: '10px', height:'40px' }} />
+          <div style={{ fontWeight: 'bold',fontSize: '45px' }}>EazyTaxes</div>
+        </div>
         {showCreateFormButton && (
           <Button
             style={{
-              fontSize: '18px',
+              fontSize: '20px',
               border: 'none',
               borderRadius: '5px',
               fontWeight: 'bold',
               paddingBottom: '15px',
-              background:"black",
-              color:'white'
-
+              background: 'black',
+              color: 'white',
             }}
             onClick={() => setFormModalVisible(true)}
           >
